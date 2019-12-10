@@ -8,7 +8,7 @@ export default class SignupFormScreen extends Component {
 			<View style={styles.container}>
 				<Text>SignupFormScreen</Text>
 				<TouchableOpacity onPress={() => {navigation.navigate('LoginScreen');}}>
-					<Text>로그인하기</Text>
+					<Text>확인</Text>
 				</TouchableOpacity>
 			</View>
 		);
