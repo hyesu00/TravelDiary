@@ -3,6 +3,7 @@ import {StyleSheet, View, Text, TouchableOpacity, Modal, Image} from 'react-nati
 import AwesomeButton from "./../components/Button";
 import TermOfUse from './../components/TermOfUse';
 import PrivacyPolicy from './../components/PrivacyPolicy';
+import AButton from "react-native-really-awesome-button";
 
 export default class AgreenmentScreen extends Component {
 	state = {
@@ -85,7 +86,7 @@ export default class AgreenmentScreen extends Component {
 								{
 									this.state.completed2? <Image style={{height: 25, width: 25}} source={require('./../images/checked.png')}/> : <Image style={{height: 25, width: 25}} source={require('./../images/checkbox.png')}/>
 								}
-								<Text>동의합니다.</Text>
+								<Text style={{marginLeft: 5}}>동의합니다.</Text>
 							</TouchableOpacity>
 						</View>
 						<View style={{marginTop: 20}}>
@@ -104,7 +105,7 @@ export default class AgreenmentScreen extends Component {
 								{
 									this.state.completed3? <Image style={{height: 25, width: 25}} source={require('./../images/checked.png')}/> : <Image style={{height: 25, width: 25}} source={require('./../images/checkbox.png')}/>
 								}
-								<Text>동의합니다.</Text>
+								<Text style={{marginLeft: 5}}>동의합니다.</Text>
 							</TouchableOpacity>
 						</View>
 						<View style={{marginTop: 20}}>
@@ -114,7 +115,9 @@ export default class AgreenmentScreen extends Component {
 				</Modal>
 
 				<View>
-					<AwesomeButton onPress={() => {navigation.navigate('SignupFormScreen');}} title={'다음'} />
+					{
+						this.state.completed1? <AwesomeButton onPress={() => {navigation.navigate('SignupFormScreen');}} title={'다음'} /> : <AwesomeButton title={'다음'} backgroundColor={'#e0e0e0'} backgroundDarker={'#8e8e8e'} disabled={true} />
+					}
 				</View>
 			</View>
 		);

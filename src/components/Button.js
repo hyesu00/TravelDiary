@@ -11,6 +11,7 @@ export default class Button extends Component {
 		width: 150,
 		height: 50,
 		textColor: '#333',
+		disabled: false,
 		onPress: () => null,
 	}
 
@@ -21,7 +22,7 @@ export default class Button extends Component {
 	render() {
 		return(
 			<View style={{alignItems: "center"}}>
-				<AwesomeButton onPress={this.props.onPress} backgroundColor={this.props.backgroundColor} backgroundDarker={this.props.backgroundDarker} width={this.props.width} height={this.props.height} textColor={this.props.textColor}>
+				<AwesomeButton onPress={this.props.onPress} backgroundColor={this.props.backgroundColor} backgroundDarker={this.props.backgroundDarker} width={this.props.width} height={this.props.height} textColor={this.props.textColor} disabled={this.props.disabled}>
 						{this.props.title}
 				</AwesomeButton>
 			</View>
