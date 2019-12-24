@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "969425515016",
+    "firebase_url": "https://travel-diary-app-596dd.firebaseio.com",
+    "project_id": "travel-diary-app-596dd",
+    "storage_bucket": "travel-diary-app-596dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:969425515016:android:c7bf5df113f353e70397bd",
+        "android_client_info": {
+          "package_name": "com.TravelDiary.TravelDiary"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "969425515016-1vt20jecu8c377ap27q4m7hok8gv6g96.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDj3dCLO79Prgvgf5y2ZSLXtDi-hiGHokM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "969425515016-1vt20jecu8c377ap27q4m7hok8gv6g96.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
